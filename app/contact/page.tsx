@@ -42,41 +42,37 @@ const STATS = [
 /* ─── Hero ────────────────────────────────────────────────────────────────── */
 function Hero() {
   return (
-    <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-brand-bg pt-28 pb-24">
-      {/* Same ambient grid as home hero */}
-      <div className="pointer-events-none absolute inset-0 bg-brand-grid bg-grid opacity-70 mask-[radial-gradient(ellipse_at_center,black_10%,transparent_75%)]" />
-      <div className="pointer-events-none absolute -left-32 top-1/3 h-72 w-72 rounded-full bg-brand-primary/10 blur-3xl" />
-      <div className="pointer-events-none absolute right-0 top-10 h-64 w-64 rounded-full bg-brand-primary/10 blur-3xl" />
-
-      {/* Bottom separator */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-brand-border" />
+    <section
+      className="relative flex min-h-[70vh] items-center overflow-hidden pt-28 pb-24"
+      style={{ background: "linear-gradient(135deg, #0a0f1e 0%, #0d1b3e 25%, #0f2d6b 50%, #1B4B7A 72%, #1e6fa8 100%)" }}
+    >
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize: "52px 52px" }} />
+      <div className="pointer-events-none absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-blue-500/20 blur-[120px]" />
+      <div className="pointer-events-none absolute -left-20 bottom-0 h-[400px] w-[400px] rounded-full bg-indigo-600/20 blur-[100px]" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10" />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6">
         {/* Eyebrow — same style as home */}
-        <span className="inline-flex items-center gap-2 rounded-sm border border-brand-border px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-brand-primary">
-          <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" />
+        <span className="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300">
+          <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
           Get in Touch
         </span>
 
-        <h1 className="mt-6 font-display text-4xl leading-[1.08] text-brand-ink sm:text-5xl lg:text-[3.4rem]">
+        <h1 className="mt-6 font-display text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-[3.4rem]">
           Let&apos;s build something
           <br />
-          <span className="text-brand-primary">great together.</span>
+          <span className="bg-gradient-to-r from-blue-300 to-sky-300 bg-clip-text text-transparent">great together.</span>
         </h1>
 
-        <p className="mt-6 max-w-md font-body text-base leading-relaxed text-brand-muted">
+        <p className="mt-6 max-w-md text-base leading-relaxed text-slate-300">
           Have a project in mind? Tell us what you&apos;re building — we&apos;ll
           tell you what it takes, and get it shipped.
         </p>
 
-        {/* Stats row — same style as home hero */}
-    
-
-        {/* Breadcrumb */}
-        <div className="mt-8 flex items-center gap-2 font-mono text-xs tracking-wider text-brand-muted">
+        <div className="mt-8 flex items-center gap-2 font-mono text-xs tracking-wider text-slate-400">
           <span>Home</span>
           <span>/</span>
-          <span className="text-brand-primary">Contact</span>
+          <span className="text-blue-300">Contact</span>
         </div>
       </div>
     </section>

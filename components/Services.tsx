@@ -78,7 +78,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative overflow-hidden rounded-sm border border-brand-border bg-brand-surface p-8 transition-all duration-300 hover:border-brand-primary/40 hover:shadow-[0_12px_40px_-16px_rgba(27,75,122,0.18)]"
+              className="group relative overflow-hidden rounded-sm border border-brand-border bg-brand-surface p-8 transition-all duration-300 hover:border-brand-primary/40 hover:shadow-[0_12px_40px_-16px_rgba(34,197,94,0.18)]"
             >
               {/* Hover fill */}
               <div className="absolute inset-0 bg-brand-primary/[0.03] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

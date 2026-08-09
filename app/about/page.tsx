@@ -81,29 +81,31 @@ const About = () => {
         {/* ══════════════════════════════════════════
             HERO
         ══════════════════════════════════════════ */}
-        <section className="relative flex min-h-screen items-center overflow-hidden bg-brand-bg pt-28 pb-24">
-          {/* Same ambient grid as home hero */}
-          <div className="pointer-events-none absolute inset-0 bg-brand-grid bg-grid opacity-70 mask-[radial-gradient(ellipse_at_center,black_10%,transparent_75%)]" />
-          {/* Same glow orbs as home hero */}
-          <div className="pointer-events-none absolute -left-32 top-1/3 h-72 w-72 rounded-full bg-brand-primary/10 blur-3xl" />
-          <div className="pointer-events-none absolute right-0 top-10 h-64 w-64 rounded-full bg-brand-primary/10 blur-3xl" />
+        <section
+          className="relative flex min-h-screen items-center overflow-hidden pt-28 pb-24"
+          style={{ background: "linear-gradient(135deg, #0a0f1e 0%, #0d1b3e 25%, #0f2d6b 50%, #1B4B7A 72%, #1e6fa8 100%)" }}
+        >
+          <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize: "52px 52px" }} />
+          <div className="pointer-events-none absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-blue-500/20 blur-[120px]" />
+          <div className="pointer-events-none absolute -left-20 bottom-0 h-[400px] w-[400px] rounded-full bg-indigo-600/20 blur-[100px]" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10" />
 
           <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-[1.05fr_0.95fr]">
             {/* Left — text */}
             <div>
               {/* Eyebrow — same style as home hero */}
-              <span className="inline-flex items-center gap-2 rounded-sm border border-brand-border px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-brand-primary">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300">
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
                 About RK Web Creatives
               </span>
 
-              <h1 className="mt-6 font-display text-4xl leading-[1.08] text-brand-ink sm:text-5xl lg:text-[3.4rem]">
+              <h1 className="mt-6 font-display text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-[3.4rem]">
                 The studio behind
                 <br />
-                the <span className="text-brand-primary">build.</span>
+                the{" "}<span className="bg-gradient-to-r from-blue-300 to-sky-300 bg-clip-text text-transparent">build.</span>
               </h1>
 
-              <p className="mt-6 max-w-md font-body text-base leading-relaxed text-brand-muted">
+              <p className="mt-6 max-w-md text-base leading-relaxed text-slate-300">
                 RK Web Creatives is a freelance web studio specialising in
                 WordPress, React, and Next.js — designing and shipping digital
                 products that are fast, accessible, and built to last.
@@ -121,7 +123,7 @@ const About = () => {
                 ].map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-sm border border-brand-border px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-brand-muted transition-colors hover:border-brand-primary hover:text-brand-primary"
+                    className="rounded-full border border-blue-400/20 bg-blue-400/10 px-3 py-1 text-xs text-blue-300 transition-colors hover:border-blue-300 hover:text-blue-200"
                   >
                     {tech}
                   </span>
@@ -131,18 +133,18 @@ const About = () => {
 
             {/* Right — studio profile panel, mirrors home hero browser card */}
             <div className="relative mx-auto hidden w-full max-w-md lg:block">
-              <div className="corner-marks overflow-hidden rounded-md border border-brand-border bg-brand-surface shadow-[0_20px_60px_-25px_rgba(16,27,45,0.25)]">
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl shadow-black/50 backdrop-blur-xl">
                 {/* Panel chrome */}
-                <div className="flex items-center gap-2 border-b border-brand-border bg-brand-surfaceAlt px-4 py-3">
-                  <span className="h-2.5 w-2.5 rounded-full bg-brand-muted/40" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-brand-primary/50" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-brand-primary/80" />
-                  <span className="ml-3 flex-1 truncate rounded-sm bg-brand-bg/60 px-3 py-1 font-mono text-[10px] text-brand-muted">
+                <div className="flex items-center gap-2 border-b border-white/10 bg-white/5 px-4 py-3">
+                  <span className="h-2.5 w-2.5 rounded-full bg-red-500/60" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/60" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-green-400/60" />
+                  <span className="ml-3 flex-1 truncate rounded-md bg-white/10 px-3 py-1 font-mono text-[10px] text-slate-300">
                     rkwebcreatives.com/about
                   </span>
                 </div>
                 {/* Panel body */}
-                <div className="divide-y divide-brand-border">
+                <div className="divide-y divide-white/10">
                   {[
                     { label: "Studio", value: "RK Web Creatives" },
                     { label: "Founded", value: "2022" },
@@ -154,17 +156,17 @@ const About = () => {
                       key={row.label}
                       className="flex items-center gap-4 px-5 py-3.5"
                     >
-                      <span className="w-20 shrink-0 font-mono text-[10px] uppercase tracking-widest text-brand-muted">
+                      <span className="w-20 shrink-0 font-mono text-[10px] uppercase tracking-widest text-slate-400">
                         {row.label}
                       </span>
-                      <span className="font-mono text-[11px] text-brand-ink">
+                      <span className="font-mono text-[11px] text-white">
                         {row.value}
                       </span>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-brand-muted">
+              <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
                 <span>Fig. 02 — Studio profile</span>
                 <span>Est. 2022</span>
               </div>
@@ -181,7 +183,7 @@ const About = () => {
             <div className="relative">
               {/* Decorative frame offset */}
               <div className="absolute -top-3 -left-3 w-full h-full border-2 border-brand-primary/20 rounded-tr-[60px]" />
-              <div className="corner-marks relative w-full h-110 rounded-tr-[60px] overflow-hidden border border-brand-border shadow-[0_20px_60px_-25px_rgba(16,27,45,0.25)]">
+              <div className="corner-marks relative w-full h-110 rounded-tr-[60px] overflow-hidden border border-brand-border shadow-[0_20px_60px_-25px_rgba(0,0,0,0.6)]">
                 <img
                   src="https://kalamiti.in/wp-content/uploads/2024/09/Ketaki-Dhobale-new.jpg"
                   alt="Kajal Jadhav — Director"
@@ -257,7 +259,7 @@ const About = () => {
 
               <a
                 href="/contact"
-                className="inline-flex items-center gap-2.5 mt-8 bg-brand-primary text-brand-surface text-sm font-semibold px-7 py-3.5 rounded-sm hover:bg-brand-primaryDark transition-all duration-200 shadow-[0_12px_30px_-12px_rgba(27,75,122,0.45)]"
+                className="inline-flex items-center gap-2.5 mt-8 bg-brand-primary text-brand-bg text-sm font-semibold px-7 py-3.5 rounded-sm hover:bg-brand-primaryDark transition-all duration-200 shadow-[0_12px_30px_-12px_rgba(34,197,94,0.45)]"
               >
                 Get in Touch <MdArrowForward size={16} />
               </a>
@@ -298,7 +300,7 @@ const About = () => {
                     strokeWidth={1.5}
                   />
                 </div>
-                <div className="w-8 h-0.5 bg-brand-accent mb-4 rounded-full" />
+                <div className="w-8 h-0.5 bg-brand-primary mb-4 rounded-full" />
                 <h3 className="font-display text-2xl font-normal text-brand-ink mb-3">
                   Our Vision
                 </h3>
@@ -310,7 +312,7 @@ const About = () => {
               </div>
 
               {/* Mission — elevated card */}
-              <div className="vmv-card group bg-brand-primary p-8 rounded-sm transition-all duration-300 hover:shadow-[0_25px_55px_-20px_rgba(27,75,122,0.45)] md:-mt-4">
+              <div className="vmv-card group bg-brand-primary p-8 rounded-sm transition-all duration-300 hover:shadow-[0_25px_55px_-20px_rgba(34,197,94,0.45)] md:-mt-4">
                 <div className="w-12 h-12 rounded-sm bg-brand-surface/10 flex items-center justify-center mb-6 group-hover:bg-brand-surface/20 transition-colors duration-300">
                   <FiTarget
                     size={20}
@@ -318,7 +320,7 @@ const About = () => {
                     strokeWidth={1.5}
                   />
                 </div>
-                <div className="w-8 h-0.5 bg-brand-accent mb-4 rounded-full" />
+                <div className="w-8 h-0.5 bg-brand-primary mb-4 rounded-full" />
                 <h3 className="font-display text-2xl font-normal text-brand-surface mb-3">
                   Our Mission
                 </h3>
@@ -338,7 +340,7 @@ const About = () => {
                     strokeWidth={1.5}
                   />
                 </div>
-                <div className="w-8 h-0.5 bg-brand-accent mb-4 rounded-full" />
+                <div className="w-8 h-0.5 bg-brand-primary mb-4 rounded-full" />
                 <h3 className="font-display text-2xl font-normal text-brand-ink mb-4">
                   Our Values
                 </h3>

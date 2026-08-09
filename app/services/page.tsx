@@ -82,32 +82,36 @@ export function ServicesPage() {
       {/* ══════════════════════════════════════════
           HERO
       ══════════════════════════════════════════ */}
-      <section className="border-b border-brand-border py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section
+        className="relative overflow-hidden py-24 md:py-32"
+        style={{ background: "linear-gradient(135deg, #0a0f1e 0%, #0d1b3e 25%, #0f2d6b 50%, #1B4B7A 72%, #1e6fa8 100%)" }}
+      >
+        <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize: "52px 52px" }} />
+        <div className="pointer-events-none absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-blue-500/20 blur-[120px]" />
+        <div className="pointer-events-none absolute -left-20 bottom-0 h-[400px] w-[400px] rounded-full bg-indigo-600/20 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10" />
+        <div className="mx-auto max-w-7xl px-5 md:px-8 relative z-10">
           <div className="grid gap-16 md:grid-cols-[1.2fr_1fr] md:items-end md:gap-12">
             <div>
               <div className="mb-8 flex items-center gap-4">
-                <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-brand-primary">
+                <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-blue-300">
                   Services
                 </span>
-                <span className="h-px max-w-12 flex-1 bg-brand-border" />
+                <span className="h-px max-w-12 flex-1 bg-white/20" />
               </div>
-
-              <h1 className="font-display text-4xl leading-[1.08] text-balance text-brand-ink sm:text-5xl md:text-6xl">
+              <h1 className="font-display text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-6xl">
                 Five disciplines.
                 <br />
-                One studio, <span className="text-brand-primary">start to finish.</span>
+                One studio,{" "}<span className="bg-gradient-to-r from-blue-300 to-sky-300 bg-clip-text text-transparent">start to finish.</span>
               </h1>
-
-              <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-brand-muted">
+              <p className="mt-6 max-w-md text-sm leading-relaxed text-slate-300">
                 We design, build, and market — carrying a project through
                 every stage under one roof, so nothing gets lost in a
                 handoff between vendors.
               </p>
-
               <a
                 href="#services-list"
-                className="group mt-10 inline-flex items-center gap-3 border-b border-brand-primary pb-1 font-mono text-xs uppercase tracking-widest text-brand-primary transition-colors hover:border-brand-primary/50 hover:text-brand-primary/70"
+                className="group mt-10 inline-flex items-center gap-3 rounded-lg border border-blue-400/30 bg-blue-400/10 px-5 py-2.5 text-sm font-semibold text-blue-300 transition-all hover:bg-blue-400/20"
               >
                 See What We Offer
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -116,20 +120,15 @@ export function ServicesPage() {
 
             {/* Blueprint rule-grid */}
             <div className="hidden md:block" aria-hidden="true">
-              <div className="grid grid-cols-5 border-t border-brand-border">
+              <div className="grid grid-cols-5 border-t border-white/10">
                 {services.map((s) => (
-                  <div
-                    key={s.number}
-                    className="flex flex-col items-center gap-3 border-r border-brand-border py-6 last:border-r-0"
-                  >
-                    <span className="font-mono text-lg text-brand-muted/50">
-                      {s.number}
-                    </span>
-                    <span className="h-10 w-px bg-brand-border" />
+                  <div key={s.number} className="flex flex-col items-center gap-3 border-r border-white/10 py-6 last:border-r-0">
+                    <span className="font-mono text-lg text-blue-300/50">{s.number}</span>
+                    <span className="h-10 w-px bg-white/10" />
                   </div>
                 ))}
               </div>
-              <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-brand-muted">
+              <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-slate-400">
                 Five services, one continuous process
               </p>
             </div>
