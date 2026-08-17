@@ -21,13 +21,13 @@ const teamMembers = [
     image:
       "./akash_wadkar.png",
   },
-  {
-    id: 3,
-    name: "Amit Desai",
-    post: "Full Stack Developer",
-    image:
-      "https://kalamiti.in/wp-content/uploads/2024/09/Ketaki-Dhobale-new.jpg",
-  },
+  // {
+  //   id: 3,
+  //   name: "Amit Desai",
+  //   post: "Full Stack Developer",
+  //   image:
+  //     "https://kalamiti.in/wp-content/uploads/2024/09/Ketaki-Dhobale-new.jpg",
+  // },
   {
     id: 4,
     name: "Sanket Patil",
