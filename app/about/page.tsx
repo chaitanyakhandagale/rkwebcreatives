@@ -9,17 +9,17 @@ import Count from "@/components/Count";
 const teamMembers = [
   {
     id: 1,
-    name: "Rahul Kulkarni",
+    name: "kartik Rangam",
     post: "Founder & Lead Developer",
     image:
-      "https://kalamiti.in/wp-content/uploads/2024/09/Ketaki-Dhobale-new.jpg",
+      "./kartik_rangam.png",
   },
   {
     id: 2,
-    name: "Priya Sharma",
+    name: "Akash Wadkar",
     post: "UI/UX Designer",
     image:
-      "https://kalamiti.in/wp-content/uploads/2024/09/Ketaki-Dhobale-new.jpg",
+      "./akash_wadkar.png",
   },
   {
     id: 3,
@@ -30,10 +30,10 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Sneha Patil",
+    name: "Sanket Patil",
     post: "SEO & Digital Marketing",
     image:
-      "https://kalamiti.in/wp-content/uploads/2024/09/Ketaki-Dhobale-new.jpg",
+      "./sanket_patil.png",
   },
 ];
 
@@ -185,7 +185,7 @@ const About = () => {
               <div className="absolute -top-3 -left-3 w-full h-full border-2 border-brand-primary/20 rounded-tr-[60px]" />
               <div className="corner-marks relative w-full h-110 rounded-tr-[60px] overflow-hidden border border-brand-border shadow-[0_20px_60px_-25px_rgba(0,0,0,0.6)]">
                 <img
-                  src="https://kalamiti.in/wp-content/uploads/2024/09/Ketaki-Dhobale-new.jpg"
+                  src="./founder.png"
                   alt="Kajal Jadhav — Director"
                   className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
                 />
