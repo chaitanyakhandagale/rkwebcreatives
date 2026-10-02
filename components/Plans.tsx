@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
@@ -124,8 +125,8 @@ export default function Plans() {
                 ))}
               </ul>
 
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className={`mt-8 block rounded-sm border py-3 text-center font-mono text-xs uppercase tracking-widest transition-colors ${
                   plan.highlight
                     ? "border-brand-primary bg-brand-primary text-brand-bg hover:bg-transparent hover:text-brand-primary"
@@ -133,7 +134,7 @@ export default function Plans() {
                 }`}
               >
                 Get a quote
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>

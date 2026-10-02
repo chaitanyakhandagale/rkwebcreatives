@@ -90,7 +90,7 @@ export default function Hero() {
           <p className="mt-6 max-w-md text-base leading-relaxed text-slate-300">
             RK Web Creatives designs and builds WordPress sites, custom
             React / Node / Next.js applications, and the marketing that
-            fills them with visitors — one freelancer, start to finish, no
+            fills them with visitors - one freelancer, start to finish, no
             middlemen.
           </p>
 

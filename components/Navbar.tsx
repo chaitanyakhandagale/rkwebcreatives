@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -32,32 +33,32 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1B4B7A] font-bold text-sm text-white">
             RK
           </span>
           <span className="font-semibold text-sm tracking-tight text-[#101B2D]">
             RK Web Creatives
           </span>
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden items-center gap-7 md:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-slate-600 transition-colors hover:text-[#1B4B7A]"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
+          <Link
             href="/contact"
             className="rounded-lg bg-[#1B4B7A] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#123d66] hover:-translate-y-0.5"
           >
             Start a Project
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -82,22 +83,22 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {links.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-50 hover:text-[#1B4B7A]"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
+              <Link
                 href="/contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 rounded-lg bg-[#1B4B7A] px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-[#123d66]"
               >
                 Start a Project
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
