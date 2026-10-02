@@ -168,7 +168,7 @@ const About = () => {
               </div>
               <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
                 <span>Fig. 02 — Studio profile</span>
-                <span>Est. 2022</span>
+                <span>Est. </span>
               </div>
             </div>
           </div>

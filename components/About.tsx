@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const facts = [
-  { label: "Founded", value: "2020" },
+  { label: "Founded", value: "2022" },
   { label: "Based in", value: "India · Remote worldwide" },
   { label: "Clients served", value: "35+ small businesses" },
   { label: "Turnaround", value: "2–6 weeks per build" },
