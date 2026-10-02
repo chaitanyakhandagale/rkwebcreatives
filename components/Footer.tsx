@@ -1,8 +1,7 @@
 "use client";
 
-import { BsInstagram } from "react-icons/bs";
-import { GiThunderBlade } from "react-icons/gi";
-import { LiaLinkedin } from "react-icons/lia";
+import { BsInstagram, BsFacebook } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 
 
 const columns = [
@@ -47,13 +46,13 @@ export default function Footer() {
               one contractor, start to finish.
             </p>
             <div className="mt-6 flex items-center gap-4 text-brand-muted">
-              <a href="#" aria-label="GitHub" className="transition-colors hover:text-brand-primary">
-                <GiThunderBlade size={18} />
+              <a href="https://www.facebook.com/people/Rk-Web-Creatives/61590608552987/" aria-label="Facebook" className="transition-colors hover:text-brand-primary">
+                <BsFacebook size={18} />
               </a>
-              <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-brand-primary">
-                <LiaLinkedin size={18} />
+              <a href="mailto:rkwebcreatives@gmail.com" aria-label="Email" className="transition-colors hover:text-brand-primary">
+                <FiMail size={18} />
               </a>
-              <a href="#" aria-label="Instagram" className="transition-colors hover:text-brand-primary">
+              <a href="https://www.instagram.com/rkweb.creatives/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-brand-primary">
                 <BsInstagram size={18} />
               </a>
             </div>

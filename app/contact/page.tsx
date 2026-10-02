@@ -3,6 +3,8 @@ import { useState } from "react";
 import type { IconType } from "react-icons";
 import { FiMapPin, FiMail, FiClock, FiArrowRight, FiCheckCircle, FiGlobe } from "react-icons/fi";
 import { sendEmail } from "../actions/sendEmail";
+import Link from "next/link";
+
 
 
 /* ─── Data ────────────────────────────────────────────────────────────────── */
@@ -267,12 +269,12 @@ function TechStrip() {
           WordPress · React · Next.js · Node.js · SEO · Hosting
         </div>
       </div>
-      <a
-        href="#"
+      <Link
+        href="/work"
         className="font-mono text-[11px] tracking-[0.15em] uppercase text-brand-surface px-5 py-2.5 whitespace-nowrap border border-brand-surface/30 rounded-sm hover:bg-brand-surface/10 hover:border-brand-surface transition-all duration-200"
       >
         View Work
-      </a>
+      </Link>
     </div>
   );
 }
