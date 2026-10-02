@@ -4,6 +4,7 @@ import type { IconType } from "react-icons";
 import { FiMapPin, FiMail, FiClock, FiArrowRight, FiCheckCircle, FiGlobe } from "react-icons/fi";
 import { sendEmail } from "../actions/sendEmail";
 
+
 /* ─── Data ────────────────────────────────────────────────────────────────── */
 const CONTACT_CARDS = [
   {
@@ -15,8 +16,8 @@ const CONTACT_CARDS = [
   {
     icon: FiMail,
     label: "Email",
-    title: "hello@rkwebcreatives.com",
-    lines: ["hello@rkwebcreatives.com", "Response within 24 hrs"],
+    title: "rkwebcreatives@gmail.com",
+    lines: ["+91 7666399720", "Response within 1-2hrs"],
   },
   {
     icon: FiGlobe,
@@ -33,10 +34,10 @@ const CONTACT_CARDS = [
 ];
 
 const STATS = [
-  { value: "40+", label: "Projects delivered" },
-  { value: "3+", label: "Years of experience" },
-  { value: "98%", label: "Client satisfaction rate" },
-  { value: "<24h", label: "Average response time" },
+  { value: "25+", label: "Projects delivered" },
+  { value: "4+", label: "Years of experience" },
+  { value: "100%", label: "Client satisfaction rate" },
+  { value: "<1-2hrs", label: "Average response time" },
 ];
 
 /* ─── Hero ────────────────────────────────────────────────────────────────── */
@@ -65,7 +66,7 @@ function Hero() {
         </h1>
 
         <p className="mt-6 max-w-md text-base leading-relaxed text-slate-300">
-          Have a project in mind? Tell us what you&apos;re building — we&apos;ll
+          Have a project in mind? Tell us what you&apos;re building - we&apos;ll
           tell you what it takes, and get it shipped.
         </p>
 
@@ -175,14 +176,14 @@ function ContactForm() {
           <span className="text-brand-primary">with us today.</span>
         </h2>
         <p className="font-body text-sm font-light text-brand-muted leading-relaxed">
-          Tell us about your project and we&apos;ll get back to you within 24 hours.
+          Tell us about your project and we&apos;ll get back to you within 1-2hrs.
         </p>
       </div>
 
       {submitted && (
         <div className="flex items-center gap-3 bg-brand-primary text-brand-surface px-5 py-3.5 mb-7 font-body text-[13px] font-light rounded-sm">
           <FiCheckCircle size={16} className="shrink-0" />
-          Message received — we&apos;ll be in touch shortly.
+          Message received - we&apos;ll be in touch shortly.
         </div>
       )}
 

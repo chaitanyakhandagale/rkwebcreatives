@@ -42,7 +42,7 @@ export default function Technology() {
             Tools I actually ship with.
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-brand-muted">
-            No trend-chasing — just a stack that's fast to build, fast to
+            No trend-chasing - just a stack that's fast to build, fast to
             load, and easy for the next developer to pick up after me.
           </p>
         </motion.div>

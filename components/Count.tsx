@@ -9,7 +9,7 @@ const Count = () => {
 
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
-  const targets = [50, 75, 10, 3];
+  const targets = [30, 25, 100, 4];
   const duration = 2500;
   const steps = 50;
 
@@ -101,14 +101,14 @@ const Count = () => {
               <span className="text-3xl">[</span>
 
               <span className="px-3 text-3xl font-medium">
-                {counts[2]} +
+                {counts[2]} %
               </span>
 
               <span className="text-3xl">]</span>
             </h3>
 
             <p className="font-serif text-xl font-semibold text-primary">
-              Awards Won
+              Client Satisfaction 
             </p>
           </div>
 

@@ -107,7 +107,7 @@ const About = () => {
 
               <p className="mt-6 max-w-md text-base leading-relaxed text-slate-300">
                 RK Web Creatives is a freelance web studio specialising in
-                WordPress, React, and Next.js — designing and shipping digital
+                WordPress, React, and Next.js - designing and shipping digital
                 products that are fast, accessible, and built to last.
               </p>
 
@@ -167,7 +167,7 @@ const About = () => {
                 </div>
               </div>
               <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
-                <span>Fig. 02 — Studio profile</span>
+                <span></span>
                 <span>Est. </span>
               </div>
             </div>
@@ -186,7 +186,7 @@ const About = () => {
               <div className="corner-marks relative w-full h-110 rounded-tr-[60px] overflow-hidden border border-brand-border shadow-[0_20px_60px_-25px_rgba(0,0,0,0.6)]">
                 <img
                   src="./founder.png"
-                  alt="Kajal Jadhav — Director"
+                  alt="Kajal Jadhav Director"
                   className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-brand-ink/80 via-transparent to-transparent" />
@@ -231,7 +231,7 @@ const About = () => {
                   specialising in WordPress, React, Node.js, and Next.js. We
                   partner with startups, small businesses, and growing brands to
                   design and build digital products that are fast, accessible,
-                  and built to last — handling everything from initial
+                  and built to last - handling everything from initial
                   wireframes through to deployment and ongoing support under one
                   roof.
                 </p>
@@ -240,8 +240,8 @@ const About = () => {
               {/* Key points */}
               <div className="grid grid-cols-2 gap-3 mt-7">
                 {[
-                  "40+ Happy Clients",
-                  "60+ Projects Delivered",
+                  "30+ Happy Clients",
+                  "25+ Projects Delivered",
                   "WordPress & Next.js Experts",
                   "End-to-End Studio",
                 ].map((point) => (
@@ -306,7 +306,7 @@ const About = () => {
                 </h3>
                 <p className="text-brand-muted text-sm font-light leading-relaxed">
                   To be the go-to web studio for businesses that want a site
-                  built right the first time — performant, accessible, and
+                  built right the first time- performant, accessible, and
                   designed to convert visitors into customers.
                 </p>
               </div>
@@ -326,7 +326,7 @@ const About = () => {
                 </h3>
                 <p className="text-brand-surface/70 text-sm font-light leading-relaxed">
                   To deliver clean, well-engineered web products on time and on
-                  budget — carrying every project from discovery through launch
+                  budget - carrying every project from discovery through launch
                   with clear communication and zero handoff gaps.
                 </p>
               </div>

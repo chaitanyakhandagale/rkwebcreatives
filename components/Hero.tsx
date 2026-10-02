@@ -114,9 +114,9 @@ export default function Hero() {
           {/* Stats */}
           <div className="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-8">
             {[
-              ["40+", "Projects shipped"],
-              ["5+", "Years building"],
-              ["<24h", "Avg. response"],
+              ["25 +", "Projects shipped"], 
+              ["4 +", "Years building"],
+              ["< 1-2hrs", "Avg. response"],
             ].map(([stat, label]) => (
               <div key={label}>
                 <div className="font-display text-2xl font-bold text-white">{stat}</div>
@@ -181,8 +181,8 @@ export default function Hero() {
           </div>
 
           <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
-            <span>Fig. 01 — Live build preview</span>
-            <span>Scale 1:1</span>
+            <span></span>
+            <span></span>
           </div>
         </motion.div>
       </div>

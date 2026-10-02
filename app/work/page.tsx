@@ -567,7 +567,7 @@ export default function WorkPage() {
                   <span className="bg-gradient-to-r from-blue-300 to-sky-300 bg-clip-text text-transparent">I&apos;ve shipped.</span>
                 </h1>
                 <p className="mt-6 max-w-md text-base leading-relaxed text-slate-300">
-                  Representative projects from recent client work — spanning
+                  Representative projects from recent client work - spanning
                   React software, business websites, and WordPress. Full case
                   studies available on request.
                 </p>
@@ -575,9 +575,9 @@ export default function WorkPage() {
                 {/* Stats */}
                 <div className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-6">
                   {[
-                    ["40+", "Projects shipped"],
-                    ["5+", "Years building"],
-                    ["98%", "Client satisfaction"],
+                    ["25+", "Projects shipped"],
+                    ["4+", "Years building"],
+                    ["100%", "Client satisfaction"],
                   ].map(([stat, label]) => (
                     <div key={label}>
                       <div className="font-display text-2xl font-bold text-white">{stat}</div>
@@ -603,19 +603,19 @@ export default function WorkPage() {
                     </span>
                   </div>
                   <div className="divide-y divide-white/10" style={{ backgroundColor: "rgba(15,30,80,0.4)" }}>
-                    {["React", "Website", "WordPress"].map((cat) => (
-                      <div key={cat} className="flex items-center justify-between px-5 py-3.5">
-                        <span className="font-mono text-[11px] text-white">{cat}</span>
+                    {[{name: "React", count:"12+"   }, {name: "Website", count: "25+" }, {name: "WordPress", count: "13+"}].map((cat) => (
+                      <div key={cat.name} className="flex items-center justify-between px-5 py-3.5">
+                        <span className="font-mono text-[11px] text-white">{cat.name}</span>
                         <span className="font-mono text-[10px] text-blue-300">
-                          {projects.filter((p) => p.category === cat).length} projects
+                          {cat.count}
                         </span>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
-                  <span>Fig. 04 — Project breakdown</span>
-                  <span>{projects.length} total</span>
+                  <span></span>
+                  <span>25 total</span>
                 </div>
               </div>
             </div>
@@ -724,7 +724,7 @@ export default function WorkPage() {
               Want your project on this list?
             </h2>
             <p className="mt-3 max-w-sm font-body text-sm leading-relaxed text-brand-muted">
-              Full case studies available on request — reach out and let&apos;s
+              Full case studies available on request - reach out and let&apos;s
               talk about what you&apos;re building.
             </p>
           </div>

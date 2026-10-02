@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const facts = [
   { label: "Founded", value: "2022" },
   { label: "Based in", value: "India · Remote worldwide" },
-  { label: "Clients served", value: "35+ small businesses" },
-  { label: "Turnaround", value: "2–6 weeks per build" },
+  { label: "Clients served", value: "25+ small businesses" },
+  { label: "Turnaround", value: "1–2 weeks per build" },
 ];
 
 export default function About() {
@@ -38,8 +38,8 @@ export default function About() {
         >
           <p className="text-base leading-relaxed text-brand-muted">
             RK Web Creatives is a freelance studio, not an agency with a
-            revolving door of account managers. Every project — from the
-            first sketch to the last deploy — runs through the same hands.
+            revolving door of account managers. Every project - from the
+            first sketch to the last deploy - runs through the same hands.
             That means fewer handoffs, faster answers, and a build that
             actually matches what was promised on the call.
           </p>
@@ -49,7 +49,7 @@ export default function About() {
             custom React / Node / Next.js applications for products that
             have outgrown a page builder. Add the marketing and hosting
             layer, and a client gets a site that ships, ranks, and stays
-            online — from a single freelancer.
+            online - from a single freelancer.
           </p>
 
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-brand-border bg-brand-border sm:grid-cols-4">

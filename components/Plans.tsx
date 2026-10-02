@@ -13,7 +13,7 @@ const plans = [
     features: [
       "Up to 5 pages",
       "Custom WordPress or custom-coded website",
-      "Mobile-responsive layout",
+      "Mobile-responsive website",
       "Basic on-page SEO setup",
       "Contact form integration",
       "1-week delivery",
@@ -70,7 +70,7 @@ export default function Plans() {
             Pick a lane, or blend them.
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-brand-muted">
-            Every project is scoped and quoted after a short call — these
+            Every project is scoped and quoted after a short call - these
             are starting points, not fixed menus.
           </p>
         </motion.div>

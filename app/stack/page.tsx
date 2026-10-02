@@ -60,7 +60,7 @@ const principles = [
   {
     number: "02",
     title: "Right tool, right job",
-    desc: "WordPress for content-heavy sites, Next.js for apps with real logic. No trend-chasing — just matching the stack to the problem.",
+    desc: "WordPress for content-heavy sites, Next.js for apps with real logic. No trend-chasing - just matching the stack to the problem.",
   },
   {
     number: "03",
@@ -70,7 +70,7 @@ const principles = [
   {
     number: "04",
     title: "Easy to hand over",
-    desc: "Clean repos, documented decisions, and a CMS your team can actually use — so you're never locked in to calling me for every change.",
+    desc: "Clean repos, documented decisions, and a CMS your team can actually use - so you're never locked in to calling me for every change.",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function StackPage() {
                   <span className="bg-gradient-to-r from-blue-300 to-sky-300 bg-clip-text text-transparent">ship with.</span>
                 </h1>
                 <p className="mt-6 max-w-md text-base leading-relaxed text-slate-300">
-                  No trend-chasing — just a stack that&apos;s fast to build,
+                  No trend-chasing - just a stack that&apos;s fast to build,
                   fast to load, and easy for the next developer to pick up
                   after me.
                 </p>
@@ -116,8 +116,8 @@ export default function StackPage() {
                 <div className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-6">
                   {[
                     ["14+", "Tools mastered"],
-                    ["5+", "Years shipping"],
-                    ["40+", "Projects built"],
+                    ["4+", "Years shipping"],
+                    ["25+", "Projects built"],
                   ].map(([stat, label]) => (
                     <div key={label}>
                       <div className="font-display text-2xl font-bold text-white">{stat}</div>
@@ -152,7 +152,7 @@ export default function StackPage() {
                   </div>
                 </div>
                 <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
-                  <span>Fig. 03 — Core deps</span>
+                  <span></span>
                   <span>Always up to date</span>
                 </div>
               </div>

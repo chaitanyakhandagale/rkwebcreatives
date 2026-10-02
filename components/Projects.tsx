@@ -644,7 +644,7 @@ export default function Projects() {
             </h2>
           </div>
           <p className="max-w-xs text-sm text-brand-muted">
-            Representative software and websites from recent work — full
+            Representative software and websites from recent work - full
             case studies available on request.
           </p>
         </motion.div>

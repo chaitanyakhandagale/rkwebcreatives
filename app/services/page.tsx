@@ -16,7 +16,7 @@ const services = [
     title: "WordPress Website Design",
     desc: "Custom-built WordPress sites that are fast, on-brand, and easy to update.",
     detail:
-      "Custom themes, not a page-builder afterthought — clean information architecture and on-page SEO basics baked in, with a CMS your team can actually manage without calling a developer for every text change.",
+      "Custom themes, not a page-builder afterthought - clean information architecture and on-page SEO basics baked in, with a CMS your team can actually manage without calling a developer for every text change.",
   },
   {
     icon: Code2,
@@ -24,7 +24,7 @@ const services = [
     title: "React, Node & Next.js Development",
     desc: "Full-stack builds for products that need real application logic.",
     detail:
-      "Dashboards, booking systems, member portals, and storefronts — built on React, Node, and Next.js, with clean APIs and a codebase the next developer can actually read.",
+      "Dashboards, booking systems, member portals, and storefronts - built on React, Node, and Next.js, with clean APIs and a codebase the next developer can actually read.",
   },
   {
     icon: Megaphone,
@@ -40,7 +40,7 @@ const services = [
     title: "Static Website Hosting",
     desc: "Fast, reliable hosting with free SSL and a global CDN.",
     detail:
-      "Static infrastructure with near-zero downtime, automatic SSL, and CDN delivery — no server to patch, monitor, or babysit.",
+      "Static infrastructure with near-zero downtime, automatic SSL, and CDN delivery - no server to patch, monitor, or babysit.",
   },
   {
     icon: MessagesSquare,
@@ -48,7 +48,7 @@ const services = [
     title: "Technical Consultation",
     desc: "Expert advice on stack, scope, and feasibility before you commit.",
     detail:
-      "A second opinion on architecture, budget, or timeline — useful whether you're scoping a new build or trying to rescue a stalled one.",
+      "A second opinion on architecture, budget, or timeline - useful whether you're scoping a new build or trying to rescue a stalled one.",
   },
 ]
 
@@ -56,7 +56,7 @@ const process = [
   {
     number: "01",
     title: "Discover",
-    desc: "We map out your goals, users, and constraints — audit what exists, if anything — before a single screen gets designed.",
+    desc: "We map out your goals, users, and constraints - audit what exists, if anything - before a single screen gets designed.",
   },
   {
     number: "02",
@@ -66,7 +66,7 @@ const process = [
   {
     number: "03",
     title: "Build",
-    desc: "Development happens in the open — staging links and regular check-ins so you always know where the project stands.",
+    desc: "Development happens in the open - staging links and regular check-ins so you always know where the project stands.",
   },
   {
     number: "04",
@@ -105,7 +105,7 @@ export function ServicesPage() {
                 One studio,{" "}<span className="bg-gradient-to-r from-blue-300 to-sky-300 bg-clip-text text-transparent">start to finish.</span>
               </h1>
               <p className="mt-6 max-w-md text-sm leading-relaxed text-slate-300">
-                We design, build, and market — carrying a project through
+                We design, build, and market - carrying a project through
                 every stage under one roof, so nothing gets lost in a
                 handoff between vendors.
               </p>
@@ -234,7 +234,7 @@ export function ServicesPage() {
                 <span className="h-px max-w-12 flex-1 bg-brand-border" />
               </div>
               <h2 className="max-w-md font-display text-3xl leading-[1.1] text-brand-ink sm:text-4xl">
-                Tell us what you&apos;re building — we&apos;ll tell you what it takes.
+                Tell us what you&apos;re building - we&apos;ll tell you what it takes.
               </h2>
             </div>
 

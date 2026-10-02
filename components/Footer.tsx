@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-brand-muted">
               A freelance studio building WordPress sites, React / Node /
-              Next.js applications, digital marketing, and static hosting —
+              Next.js applications, digital marketing, and static hosting -
               one contractor, start to finish.
             </p>
             <div className="mt-6 flex items-center gap-4 text-brand-muted">

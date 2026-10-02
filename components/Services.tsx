@@ -14,7 +14,7 @@ const services = [
     tag: "02",
     icon: Code2,
     title: "React, Node & Next.js Development",
-    body: "Full-stack builds for products that outgrow WordPress — dashboards, booking systems, member portals, storefronts, anything with real logic behind it.",
+    body: "Full-stack builds for products that outgrow WordPress - dashboards, booking systems, member portals, storefronts, anything with real logic behind it.",
   },
   {
     tag: "03",
@@ -26,7 +26,7 @@ const services = [
     tag: "04",
     icon: Server,
     title: "Static Website Hosting",
-    body: "Deployed on fast, static infrastructure — free SSL, global CDN, near-zero downtime, and no server for you to babysit.",
+    body: "Deployed on fast, static infrastructure - free SSL, global CDN, near-zero downtime, and no server for you to babysit.",
   },
 ];
 
